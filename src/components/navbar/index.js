@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import logo from './../../../src/marveldex-logo.png';
 import PropTypes from 'prop-types';
+import { BrowserRouter, Route } from 'react-router-dom'
 
 import {
   Collapse,
@@ -34,7 +35,7 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="warning" light expand="md">
-          <NavbarBrand href="/"> <a href="#"><img src={logo} alt={"logo"} weign="40" height="40"/></a></NavbarBrand>
+          <NavbarBrand href="/"><img src={logo} alt={"logo"} weign="40" height="40"/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
