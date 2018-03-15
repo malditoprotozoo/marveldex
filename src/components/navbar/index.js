@@ -2,7 +2,9 @@
 import React, { Component } from 'react';
 import logo from './../../../src/marveldex-logo.png';
 import PropTypes from 'prop-types';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom';
+import Home from './../Home';
+import Login from './../login';
 
 import {
   Collapse,
@@ -67,4 +69,16 @@ Navbar.propTypes = {
 NavbarBrand.propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
   // pass in custom element to use
+}
+
+const index = () => {
+  return (
+      <BrowserRouter>
+      <div>
+      <Route path="/" exact component = {Home}/>
+      <Route path="./components/navbar/index" component = {Navbar}/>
+      <Route path="./components/login" component = {Login}/>
+      </div>
+      </BrowserRouter>
+  )
 }

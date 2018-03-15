@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './App.js';
 import './index.css';
@@ -6,20 +6,20 @@ import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from './components/navbar';
-import Home from './components/Home';
-import Login from './components/login';
 
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
 
-const App = () => {
+  render() {
     return (
-        <BrowserRouter>
-        <div>
-        <Route path="/" exact component = {Home}/>
-        <Route path="./components/navbar/index" component = {Navbar}/>
-        <Route path="./components/login" component = {Login}/>
-        </div>
-        </BrowserRouter>
-    )
+      <div className="Navbar">
+        <Navbar />
+      </div>
+    );
+  }
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
