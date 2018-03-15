@@ -7,6 +7,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from './components/navbar';
 import { Provider } from 'react-redux';
+import { store } from './store';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();
