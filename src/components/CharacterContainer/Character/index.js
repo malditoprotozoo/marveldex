@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Name from './Name';
 import Image from './Image';
-import './index.css'
+import './index.css';
 
 class Character extends Component {
   render() {
