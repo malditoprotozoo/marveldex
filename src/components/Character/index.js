@@ -9,7 +9,7 @@ class Character extends Component {
     return (
       <div>
         <Image characterImage = '#' characterName = 'nombre' />
-        <Name characterName = 'nombre'/>
+        <Name characterName = 'nombre' />
       </div>
     )
   }

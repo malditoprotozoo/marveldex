@@ -7,4 +7,8 @@ const Name =( { characterName } ) => (
   </div>
   )
 
+Name.propTypes= {
+  characterName: PropTypes.string.isRequired,
+}
+
 export default Name;

@@ -7,4 +7,10 @@ const Image =( { characterImage, characterName } ) => (
   </div>
   )
 
+
+Image.propTypes = {
+  characterName: PropTypes.string.isRequired,
+  characterImage: PropTypes.string.isRequired,
+}
+
 export default Image;
