@@ -17,20 +17,20 @@ class ComicItem extends Component {
           <Col md="9">
             <Row>
               <Col md="12">
-                <Title />
-                <PublishOn />
-                <Pages />
+                <Title comicTitle = 'título de prueba'/>
+                <PublishOn comicDate = '00/00/00'/>
+                <Pages comicPages = '160'/>
               </Col>
             </Row>
             <Row>
               <Col md="12">
-                <Synopsis />
+                <Synopsis comicSynopsis = 'Lorem ipsum dolor sit amet.'/>
                 <SeeMore />
               </Col>
             </Row>
           </Col>
           <Col md="3">
-            <Cover />
+            <Cover comicTitle = 'título de prueba' comicImage = '#' />
           </Col>
         </Row>
       </Container>
