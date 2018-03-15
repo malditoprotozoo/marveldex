@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Navbar from './components/navbar';
 import './App.css';
-import CharacterContainer from './components/CharacterContainer/index';
+import Navbar from './components/navbar';
+
+
 
 class App extends Component {
   constructor() {
@@ -9,15 +10,8 @@ class App extends Component {
     this.state = {};
   }
 
-  render() {
-    return (
-      <div className="Navbar">
-        <Navbar />
-        <CharacterContainer/>
-      </div>
-    );
-  }
-}
 
+  
+}
 
 export default App;

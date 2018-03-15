@@ -1,5 +1,5 @@
 // Importando componentes de React
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './../../../src/marveldex-logo.png';
 import PropTypes from 'prop-types';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -13,11 +13,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink } from 'reactstrap';
 
 export default class Example extends React.Component {
   constructor(props) {
