@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Image =( { characterImage, characterName } ) => (
-  <div>
+  <div className="image-container">
     <img src={characterImage} alt={characterName} />
   </div>
   )
