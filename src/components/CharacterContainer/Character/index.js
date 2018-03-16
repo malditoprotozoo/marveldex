@@ -32,13 +32,15 @@ class Character extends Component {
   }
   render() {
     return (
-      <Col md='2' className='character-item'>
-        <Col md='12'>
-        <Image characterImage = {this.state.image} characterName = {this.state.name} />
-        </Col>
-        <Col md='12'>
-        <Name characterName = {this.state.name}/>
-        </Col>
+      <Col md='2' className='character-item-container'>
+        <div className='character-item'>
+          <Col md='12' className='image'>
+            <Image characterImage = {this.state.image} characterName = {this.state.name} />
+          </Col>
+          <Col md='12' className='name'>
+            <Name characterName = {this.state.name}/>
+          </Col>
+        </div>
       </Col>
     )
   }
