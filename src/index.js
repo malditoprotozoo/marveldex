@@ -5,7 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
-import CharacterDetail from './components/CharacterDetail';
+import CharacterContainer from './components/CharacterContainer';
 
 
 
@@ -19,7 +19,7 @@ class App extends Component {
       return (
         <div className="Navbar">
           <Navbar />
-          <CharacterDetail/>
+          <CharacterContainer/>
         </div>
       );
     }
