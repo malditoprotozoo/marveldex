@@ -32,11 +32,6 @@ class App extends Component {
     }
   }
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// import { Provider } from 'react-redux';
-// import { store } from './store';
-// <Provider store={store}><App /></Provider>
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 
 registerServiceWorker();
