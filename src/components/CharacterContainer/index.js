@@ -39,7 +39,7 @@ class CharacterContainer extends Component {
     return (
       <Row className='character-container'>
         {
-        this.state.loading ? <p>insert loader here</p> :
+        this.state.loading ? <img class="loader" src={require("./../../marvel_loader.gif")}/> :
         this.state.data.map((char, index) =>
             char !== undefined ?
             <Character key={char.name} characterName={char.name} characterImage={char.thumbnail.path + '.' + char.thumbnail.extension}/> :
