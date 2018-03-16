@@ -9,36 +9,54 @@ import SeeMore from './SeeMore';
 import { Container, Row, Col } from 'reactstrap';
 import './index.css';
 
-class ComicItem extends Component {
-  render() {
-    return (
-      <Container className='comic-item-container'>
-        <Row className='comic-item'>
-          <Col lg="9">
-            <Row>
-              <Col lg="12">
-                <Title comicTitle = 'título de prueba'/>
-                <PublishOn comicDate = '00/00/00'/>
-                <Pages comicPages = '160'/>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg="12" className='synopsis'>
-                <Synopsis comicSynopsis = 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, totam... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos provident optio, nam.'/>
-              </Col>
-            </Row>
-          </Col>
-          <Col lg="3" className='cover-container'>
-            <Cover comicTitle = 'título de prueba' comicImage = 'https://memestatic.fjcdn.com/pictures/Josuke_86806d_6279840.jpg' />
-          </Col>
-          <div className='s-m-btn-container'>
-            <SeeMore comicUrl='google.com'/>
-          </div>
-        </Row>
-      </Container>
-    )
-  }
+const ComicItem = function({ comicTitle }) {
+  return (
+    <Container className='comic-item-container'>
+      <Row className='comic-item'>
+        <Col lg="9">
+          <Row>
+            <Col lg="12">
+              <Title comicTitle = {comicTitle}/>
+              <PublishOn comicDate = '00/00/00'/>
+              <Pages comicPages = '160'/>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
+
+// class ComicItem extends Component {
+//   render() {
+//     return (
+//       <Container className='comic-item-container'>
+//         <Row className='comic-item'>
+//           <Col lg="9">
+//             <Row>
+//               <Col lg="12">
+//                 <Title comicTitle = 'título de prueba'/>
+//                 <PublishOn comicDate = '00/00/00'/>
+//                 <Pages comicPages = '160'/>
+//               </Col>
+//             </Row>
+//             <Row>
+//               <Col lg="12" className='synopsis'>
+//                 <Synopsis comicSynopsis = 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, totam... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos provident optio, nam.'/>
+//               </Col>
+//             </Row>
+//           </Col>
+//           <Col lg="3" className='cover-container'>
+//             <Cover comicTitle = 'título de prueba' comicImage = 'https://memestatic.fjcdn.com/pictures/Josuke_86806d_6279840.jpg' />
+//           </Col>
+//           <div className='s-m-btn-container'>
+//             <SeeMore comicUrl='google.com'/>
+//           </div>
+//         </Row>
+//       </Container>
+//     )
+//   }
+// }
 // <SeeMore /> en el espacio bajo sinopsis
 Container.propTypes = {
   fluid: PropTypes.bool

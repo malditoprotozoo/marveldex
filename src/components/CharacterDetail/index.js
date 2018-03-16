@@ -36,6 +36,7 @@ class CharacterDetail extends Component {
       })
       .then(() => {
         console.log(this.state);
+        console.log(this.state.data.series.items);
       })
       .catch(error => {
         console.log(error);
@@ -47,14 +48,19 @@ class CharacterDetail extends Component {
         <Row className='char-info section'>
           <Col xs='12' md={{size:8, offset:2}}>
             {
-            this.state.loading ? <div className='load-container'><img className="loader" src={require("./../../marvel_loader.gif")}/> <span>Loading...</span></div> :
-            <CharacterBasic characterName={this.state.data.name} characterImage={this.state.data.thumbnail.path + '.' + this.state.data.thumbnail.extension} characterBio={this.state.data.description} />
+              this.state.loading ? <div className='load-container'><img className="loader" src={require("./../../marvel_loader.gif")}/> <span>Loading...</span></div> :
+              <CharacterBasic characterName={this.state.data.name} characterImage={this.state.data.thumbnail.path + '.' + this.state.data.thumbnail.extension} characterBio={this.state.data.description} />
             }
           </Col>
         </Row>
         <Row className='comic-item-list section'>
           <Col xs='12' md={{size:6, offset:3}}>
-            <ComicItemList />
+            { 
+              this.state.loading ? <p>asdas</p> :
+              this.state.data.series.items.map((comic) => {
+              <ComicItem key={comic.name} comicTitle={comic.name} />
+            })
+            }
           </Col>
         </Row>
       </Container>

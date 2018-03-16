@@ -4,15 +4,22 @@ import PropTypes from 'prop-types';
 import ComicItem from './ComicItem';
 import './index.css';
 
-class ComicItemList extends Component {
-  render() {
-    return (
-      <div className='comic-item-list'>
-        <ComicItem/>
-      </div>
-    )
-  }
+const ComicItemList = function({comicTitle}) {
+  return (
+    <div className='comic-item-list'>
+      <ComicItem comicTitle={comicTitle}/>
+    </div>
+  );
 }
+// class ComicItemList extends Component {
+//   render() {
+//     return (
+//       <div className='comic-item-list'>
+//         <ComicItem/>
+//       </div>
+//     )
+//   }
+// }
 
 
 export default ComicItemList;
