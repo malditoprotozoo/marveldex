@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import ComictItemList from './ComicItemList';
+import ComicItemList from './ComicItemList';
 import ComicItem from './ComicItem';
 import CharacterBasic from './CharacterBasic';
 import { Container, Row, Col } from 'reactstrap';
@@ -10,13 +10,13 @@ class CharacterDetail extends Component {
   render() {
     return (
       <Container>
-        <Row>
-          <Col>
+        <Row className='char-info section'>
+          <Col xs='12'>
             <CharacterBasic />
           </Col>
         </Row>
-        <Row>
-          <Col>
+        <Row className='comic-item-list section'>
+          <Col xs='12'>
             <ComicItemList />
           </Col>
         </Row>
