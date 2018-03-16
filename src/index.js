@@ -8,7 +8,7 @@ import Navbar from './components/navbar';
 //import CharacterDetail from './components/CharacterDetail';
 import CharacterContainer from './components/CharacterContainer';
 import SearchBar from './components/navbar/searchbar/index';
-
+import './firebase';
 
 
 class App extends Component {
