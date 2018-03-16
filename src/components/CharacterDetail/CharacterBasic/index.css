@@ -1,4 +1,4 @@
-.image-container img {
+.char-image img {
   width: 100%;
 }
 
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.image-container {
+.char-image {
   display: inline-block;
   width: 220px;
   height: 220px;
