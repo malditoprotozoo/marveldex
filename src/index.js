@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import CharacterContainer from './components/CharacterContainer';
+import SearchBar from './components/navbar/searchbar/index';
 
 
 
@@ -14,12 +15,17 @@ class App extends Component {
       super();
       this.state = {};
     }
+      handleTermChange(term) {
+        console.log(term);
+      
+    }
   
     render() {
       return (
         <div className="Navbar">
           <Navbar />
           <CharacterContainer/>
+          <SearchBar onTermChange={this.handleTermChange} />
         </div>
       );
     }
