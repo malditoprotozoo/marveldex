@@ -16,7 +16,7 @@ class CharacterDetail extends Component {
           </Col>
         </Row>
         <Row className='comic-item-list section'>
-          <Col xs='12'>
+          <Col xs='12' md={{size:10, offset:1}}>
             <ComicItemList />
           </Col>
         </Row>

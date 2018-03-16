@@ -20,7 +20,7 @@ class CharacterBasic extends Component {
           <Col md='9'>
             <Row>
               <Col md='12'>
-              <Name charName='nombre'/>
+                <Name charName='nombre'/>
               </Col>
               <Col md='12'>
                 <Description charDescription='Lorem ipsum dolor sit amet.'/>

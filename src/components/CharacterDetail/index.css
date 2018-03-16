@@ -1,4 +1,13 @@
-.section {
+div.container {
+  margin: 0;
+  max-width: 100%;
+}
+
+.section.row {
   margin: 20px 0;
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.comic-item-list {
+  padding: 0 10px;
 }

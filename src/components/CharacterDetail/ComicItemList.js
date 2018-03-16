@@ -7,7 +7,7 @@ import './index.css';
 class ComicItemList extends Component {
   render() {
     return (
-      <div>
+      <div className='comic-item-list'>
         <ComicItem/>
       </div>
     )
