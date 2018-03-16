@@ -29,8 +29,8 @@ class ComicItem extends Component {
               </Col>
             </Row>
           </Col>
-          <Col md="3">
-            <Cover comicTitle = 'título de prueba' comicImage = '#' />
+          <Col md="3" className='image-container'>
+            <Cover comicTitle = 'título de prueba' comicImage = 'https://memestatic.fjcdn.com/pictures/Josuke_86806d_6279840.jpg' />
           </Col>
         </Row>
       </Container>

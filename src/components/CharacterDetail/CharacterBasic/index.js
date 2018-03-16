@@ -6,6 +6,7 @@ import Image from './Image';
 //import AddFav from './AddFav';
 import SeeMore from './SeeMore';
 import { Container, Row, Col } from 'reactstrap';
+import FaPlus from 'react-icons/lib/fa/plus';
 import './index.css';
 
 class CharacterBasic extends Component {
@@ -13,18 +14,18 @@ class CharacterBasic extends Component {
     return (
       <Container>
         <Row>
-          <Col md='3'>
+          <Col md='3' className='image-container'>
             <Image charImage='https://memestatic.fjcdn.com/pictures/Josuke+and+others+i+guess+fan+art+comp_5bc793_6279840.jpg' charName='nombre'/>
           </Col>
-          <Col md='6'>
+          <Col md='9'>
             <Row>
-              <Col>
+              <Col md='12'>
               <Name charName='nombre'/>
               </Col>
-              <Col>
+              <Col md='12'>
                 <Description charDescription='Lorem ipsum dolor sit amet.'/>
               </Col>
-              <Col>
+              <Col md='12'>
                 <SeeMore charUrl='google.com'/>
               </Col>
             </Row>

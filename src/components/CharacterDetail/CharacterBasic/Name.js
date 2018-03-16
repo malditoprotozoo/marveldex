@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 
 const Name =( { charName } ) => (
-  <h4>
+  <h4 className='char-name'>
     {charName}
   </h4>
   )
