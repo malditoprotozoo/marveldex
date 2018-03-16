@@ -9,7 +9,7 @@ import { Container, Row, Col } from 'reactstrap';
 import FaPlus from 'react-icons/lib/fa/plus';
 import './index.css';
 
-const CharacterBasic = function({characterName, characterImage, characterBio}) {
+const CharacterBasic = function({characterName, characterImage, characterBio, comicUrl}) {
   return (
     <Container>
       <Row>
@@ -27,6 +27,7 @@ const CharacterBasic = function({characterName, characterImage, characterBio}) {
               <Description charDescription={characterBio} />
             </Col>
           </Row>
+          <div className='s-m-btn-container'><SeeMore comicUrl={comicUrl}/></div>
         </Col>
       </Row>
     </Container>
