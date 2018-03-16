@@ -12,8 +12,8 @@ import './index.css';
 class ComicItem extends Component {
   render() {
     return (
-      <Container>
-        <Row>
+      <Container className='comic-item-container'>
+        <Row className='comic-item'>
           <Col md="9">
             <Row>
               <Col md="12">
@@ -23,15 +23,17 @@ class ComicItem extends Component {
               </Col>
             </Row>
             <Row>
-              <Col md="12">
-                <Synopsis comicSynopsis = 'Lorem ipsum dolor sit amet.'/>
-                <SeeMore comicUrl='google.com'/>
+              <Col md="12" className='synopsis'>
+                <Synopsis comicSynopsis = 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, totam... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos provident optio, nam.'/>
               </Col>
             </Row>
           </Col>
           <Col md="3" className='image-container'>
             <Cover comicTitle = 'título de prueba' comicImage = 'https://memestatic.fjcdn.com/pictures/Josuke_86806d_6279840.jpg' />
           </Col>
+          <div className='s-m-btn-container'>
+            <SeeMore comicUrl='google.com'/>
+          </div>
         </Row>
       </Container>
     )

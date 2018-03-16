@@ -1,3 +1,62 @@
+.comic-item {
+  padding: 25px 10px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+div.container.comic-item-container {
+  margin-bottom: 20px;
+}
+
+.image-container {
+  padding-left: 30px;
+}
+
 .image-container img {
   width: 100%;
+}
+
+.sub-info {
+  color: grey;
+  padding: 5px 15px 5px 0;
+}
+
+.title {
+  border-bottom: 2px solid black;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.synopsis {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.comic-item-list .comic-item .see-more-btn {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  border-radius: 50%;
+  background-color: #FFC107;
+  border: 2px solid #FFC107;
+  color: white;
+  transition: all .5s;
+}
+
+.comic-item-list .comic-item .see-more-btn:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  transition: all .5s;
+}
+
+.s-m-btn-container {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
