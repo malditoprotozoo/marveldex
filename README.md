@@ -41,7 +41,8 @@ Luego de su instalación los siguientes comandos deberían funcionar.
 <b>Para trabajar con react:</b>
 
 * El entorno de trabajo se inicializó con  $npm create-react-app.
-* Se definió en wireframe del producto.
+* Se definió en wireframe del producto dándole énfasis a la estructura de sus componentes.
+![alt text](https://raw.githubusercontent.com/Helvette/marveldex/master/public/img/component-character.png)
 ![alt text](https://raw.githubusercontent.com/Helvette/marveldex/master/public/img/CharacterDetail_wireframe.png)
 * Se crearon las distintas carpetas para cada componente y sus respectivas hojas de estilo.
 
