@@ -46,7 +46,10 @@ class CharacterDetail extends Component {
       <Container>
         <Row className='char-info section'>
           <Col xs='12' md={{size:8, offset:2}}>
-            <CharacterBasic />
+            {
+            this.state.loading ? <div className='load-container'><img className="loader" src={require("./../../marvel_loader.gif")}/> <span>Loading...</span></div> :
+            <CharacterBasic characterName={this.state.data.name} characterImage={this.state.data.thumbnail.path + '.' + this.state.data.thumbnail.extension} characterBio={this.state.data.description} />
+            }
           </Col>
         </Row>
         <Row className='comic-item-list section'>

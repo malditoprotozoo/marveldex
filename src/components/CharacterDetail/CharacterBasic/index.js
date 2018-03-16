@@ -9,34 +9,28 @@ import { Container, Row, Col } from 'reactstrap';
 import FaPlus from 'react-icons/lib/fa/plus';
 import './index.css';
 
-class CharacterBasic extends Component {
-  render() {
-    return (
-      <Container>
-        <Row>
-          <Col lg='3' className='text-align'>
-            <div className='char-image'>
-            <Image charImage='https://memestatic.fjcdn.com/pictures/Josuke+and+others+i+guess+fan+art+comp_5bc793_6279840.jpg' charName='nombre'/>
-            </div>
-          </Col>
-          <Col lg='9'>
-            <Row>
-              <Col lg='12' className='name-title'>
-                <Name charName='nombre'/>
-                
-              </Col>
-              <Col lg='12'>
-                <Description charDescription='Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro obcaecati veniam commodi tempora quasi, doloremque suscipit eos ipsum, praesentium placeat est accusamus.'/>
-              </Col>
-              <div className='s-m-btn-container'>
-                <SeeMore comicUrl='google.com'/>
-              </div>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
-    )
-  }
+const CharacterBasic = function({characterName, characterImage, characterBio}) {
+  return (
+    <Container>
+      <Row>
+        <Col lg='3' className='text-align'>
+          <div className='char-image'>
+            <Image charImage={characterImage} charName={characterName}/>
+          </div>
+        </Col>
+        <Col lg='9'>
+          <Row>
+            <Col lg='12' className='name-title'>
+              <Name charName={characterName}/>
+            </Col>
+            <Col lg='12'>
+              <Description charDescription={characterBio} />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
+  )
 }
 
 // <AddFav /> en espacio bajo description
