@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import ComicListItem from './ComicItemList';
+import ComictItemList from './ComicItemList';
 import ComicItem from './ComicItem';
 import CharacterBasic from './CharacterBasic';
 import { Container, Row, Col } from 'reactstrap';

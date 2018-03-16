@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Image =( { comicImage, comicTitle } ) => (
+const Cover =( { comicImage, comicTitle } ) => (
   <img src={comicImage} alt={comicTitle} />
 )
 
 
-export default Title;
+export default Cover;

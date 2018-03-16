@@ -9,4 +9,4 @@ const Synopsis =( { comicSynopsis } ) => (
   )
 
 
-export default comicSynopsis;
+export default Synopsis;

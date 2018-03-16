@@ -9,4 +9,4 @@ const Pages =( { comicPages } ) => (
   )
 
 
-export default Title;
+export default Pages;
