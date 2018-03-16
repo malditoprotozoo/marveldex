@@ -33,6 +33,10 @@ const CharacterBasic = function({characterName, characterImage, characterBio}) {
   )
 }
 
+// <div className='s-m-btn-container'>
+//                 <SeeMore comicUrl='google.com'/>
+//               </div>
+
 // <AddFav /> en espacio bajo description
 Container.propTypes = {
   fluid: PropTypes.bool
