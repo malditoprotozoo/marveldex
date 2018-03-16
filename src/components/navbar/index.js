@@ -66,15 +66,3 @@ NavbarBrand.propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
   // pass in custom element to use
 }
-
-const index = () => {
-  return (
-      <BrowserRouter>
-      <div>
-      <Route path="/" exact component = {Home}/>
-      <Route path="./components/navbar/index" component = {Navbar}/>
-      <Route path="./components/login" component = {Login}/>
-      </div>
-      </BrowserRouter>
-  )
-}
