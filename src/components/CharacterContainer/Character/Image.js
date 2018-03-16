@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Image =( { characterImage, characterName } ) => (
   <div className="image-container">
-    <img src={characterImage} alt={characterName} />
+    <a href={`/${characterName.replace(' ', '-')}/`}><img src={characterImage} alt={characterName} /></a>
   </div>
   )
 
