@@ -8,7 +8,8 @@ const characters_arr = ['Iron Man', 'Captain America', 'Spider-Man', 'Thor', 'De
 'Black Panther', 'Loki', 'Hulk', 'Doctor Strange', 'Wasp', 'Hank Pym', 'Scarlet Witch', 'QuickSilver', 'Jessica Jones',
 'Gamora', 'Daredevil', 'Elektra', 'Rogue', 'Storm', 'Wolverine', 'X-23', 'Winter Soldier', 'Groot'];
 const char_url = 'https://gateway.marvel.com:443/v1/public/characters';
-const api_key = 'f2df40d469e17113a48b2711ea0ea74f';
+// const api_key = 'f2df40d469e17113a48b2711ea0ea74f';
+const api_key = 'f3c93215e344b3ad7b6e96ba9ad9faff&hash=b8c91f97165b04fe87a6e262179476d9';
 
 class CharacterContainer extends Component {
   constructor(props) {
