@@ -15,4 +15,4 @@ class ComicItemList extends Component {
 }
 
 
-export Default ComicItemList;
+export default ComicItemList;

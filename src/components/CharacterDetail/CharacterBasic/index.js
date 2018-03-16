@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Name from './Name';
 import Description from './Description';
 import Image from './Image';
-import AddFav from './AddFav';
+//import AddFav from './AddFav';
 import SeeMore from './SeeMore';
 import { Container, Row, Col } from 'reactstrap';
 import './index.css';
@@ -14,12 +14,12 @@ class CharacterBasic extends Component {
       <Container>
         <Row>
           <Col>
-            <Image />
+            <Image charImage='#' charName='nombre'/>
           </Col>
           <Col>
-            <Name />
-            <Description />
-            <AddFav />
+            <Name charName='nombre'/>
+            <Description charDescription='Lorem ipsum dolor sit amet.'/>
+            <SeeMore charUrl='google.com'/>
           </Col>
         </Row>
       </Container>
@@ -27,7 +27,7 @@ class CharacterBasic extends Component {
   }
 }
 
-
+// <AddFav /> en espacio bajo description
 Container.propTypes = {
   fluid: PropTypes.bool
 }
