@@ -22,7 +22,8 @@ class CharacterDetail extends Component {
   componentWillMount() {
     let str = this.props.location.pathname;
     let preChar = str.replace('/character/', '');
-    let offChar = preChar.replace('-', ' ');
+    let offChar;
+    preChar !== 'Spider-Man/' ? offChar = preChar.replace('-', ' ') : offChar = preChar;
     let finalChar = offChar.replace('/', '');
     fetch(`${char_url}?name=${finalChar}&apikey=${api_key}`)
       .then(response => {
