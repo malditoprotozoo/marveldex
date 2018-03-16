@@ -4,7 +4,8 @@ import Character from './Character/index';
 import { Container, Row, Col } from 'reactstrap';
 import './index.css';
 
-const characters_arr = ['Iron Man', 'Captain America', 'Spider-Man', 'Thor'];
+const characters_arr = ['Iron Man', 'Captain America', 'Spider-Man', 'Thor', 'Deadpool', 'Black Widow', 'Hawkeye',
+'Black Panther', 'Loki', 'Hulk', 'Doctor Strange', 'Wasp', 'Hank Pym'];
 const char_url = 'https://gateway.marvel.com:443/v1/public/characters';
 const api_key = 'f2df40d469e17113a48b2711ea0ea74f';
 
@@ -40,7 +41,9 @@ class CharacterContainer extends Component {
         {
         this.state.loading ? <p>insert loader here</p> :
         this.state.data.map((char, index) =>
-            <Character key={char.name} characterName={char.name} characterImage={char.thumbnail.path + '.' + char.thumbnail.extension}/>
+            char !== undefined ?
+            <Character key={char.name} characterName={char.name} characterImage={char.thumbnail.path + '.' + char.thumbnail.extension}/> :
+            <p key={'not-found'+ index}>Character Not Found</p>
         )
         }
       </Row>
