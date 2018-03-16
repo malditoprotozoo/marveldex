@@ -9,6 +9,8 @@ import Navbar from './components/navbar';
 import CharacterContainer from './components/CharacterContainer';
 import SearchBar from './components/navbar/searchbar/index';
 import './firebase';
+import Home from './components/Home';
+import Login from './components/login';
 
 
 class App extends Component {
@@ -25,8 +27,11 @@ class App extends Component {
       return (
         <div className="Navbar">
           <Navbar />
-          <CharacterContainer/>
           <SearchBar onTermChange={this.handleTermChange} />
+          <div className="container">
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/login" component={Login} />
+          </div>
         </div>
       );
     }

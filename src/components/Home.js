@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Navbar from './navbar';
+import CharacterContainer from './CharacterContainer/index';
 
-const Home = () => {
+class Home extends Component {
+  render() {
     return (
-        <div className="Navbar">
-        <Navbar />
-        Home
-        </div>
+      <div>
+        <CharacterContainer/>
+      </div>
     )
+  }
 }
+
 export default Home;

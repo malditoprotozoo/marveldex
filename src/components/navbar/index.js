@@ -46,9 +46,6 @@ export default class Example extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-        <div className="container">
-          <Route path="/login" component={Login} />
-        </div>
       </div>
     );
   }
