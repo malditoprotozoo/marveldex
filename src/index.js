@@ -5,7 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
-//import CharacterDetail from './components/CharacterDetail';
+import CharacterDetail from './components/CharacterDetail';
 import CharacterContainer from './components/CharacterContainer';
 import SearchBar from './components/navbar/searchbar/index';
 import './firebase';
@@ -29,8 +29,9 @@ class App extends Component {
           <Navbar />
           <SearchBar onTermChange={this.handleTermChange} />
           <div className="container">
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/character/:name" component={CharacterDetail} />
           </div>
         </div>
       );
