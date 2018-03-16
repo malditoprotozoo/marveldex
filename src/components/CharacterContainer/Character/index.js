@@ -32,7 +32,7 @@ class Character extends Component {
   }
   render() {
     return (
-      <Col md='2' className='character-item-container'>
+      <Col xs='12' sm= '6' md='4' lg='2' className='character-item-container'>
         <div className='character-item'>
           <Col md='12' className='image'>
             <Image characterImage = {this.state.image} characterName = {this.state.name} />
