@@ -13,13 +13,21 @@ class CharacterBasic extends Component {
     return (
       <Container>
         <Row>
-          <Col>
-            <Image charImage='#' charName='nombre'/>
+          <Col md='3'>
+            <Image charImage='https://memestatic.fjcdn.com/pictures/Josuke+and+others+i+guess+fan+art+comp_5bc793_6279840.jpg' charName='nombre'/>
           </Col>
-          <Col>
-            <Name charName='nombre'/>
-            <Description charDescription='Lorem ipsum dolor sit amet.'/>
-            <SeeMore charUrl='google.com'/>
+          <Col md='6'>
+            <Row>
+              <Col>
+              <Name charName='nombre'/>
+              </Col>
+              <Col>
+                <Description charDescription='Lorem ipsum dolor sit amet.'/>
+              </Col>
+              <Col>
+                <SeeMore charUrl='google.com'/>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

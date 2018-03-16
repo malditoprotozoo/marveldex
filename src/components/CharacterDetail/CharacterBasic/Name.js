@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 
 const Name =( { charName } ) => (
-  <span>
+  <h4>
     {charName}
-  </span>
+  </h4>
   )
 
 
