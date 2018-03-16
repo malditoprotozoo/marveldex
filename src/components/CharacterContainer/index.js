@@ -15,7 +15,6 @@ class CharacterContainer extends Component {
       data: null,
       loading: true
     };
-    console.log(this.state);
   }
   componentWillMount() {
     let results = [];
@@ -26,9 +25,6 @@ class CharacterContainer extends Component {
         })
         .then(response => {
           results.push(response.data.results[0]);
-        })
-        .then(() => {
-          console.log(this.state);
         })
         .then(() => {
           results.length >= characters_arr.length ? this.setState({ data: results, loading: false }) : this.setState({data: results, loading: true});
