@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import './index.css';
 import FaPlus from 'react-icons/lib/fa/plus';
 
-const SeeMore =( { charUrl } ) => (
+const SeeMore =( { comicUrl } ) => (
   <span>
-    <a src={charUrl} target='_blank'> See More <FaPlus /> </a>
+    <a src={comicUrl} target='_blank'> See More <FaPlus /> </a>
   </span>
   )
 

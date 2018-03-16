@@ -5,7 +5,7 @@ import PublishOn from './PublishOn';
 import Pages from './Pages';
 import Synopsis from './Synopsis';
 import Cover from './Cover';
-//import SeeMore from './SeeMore';
+import SeeMore from './SeeMore';
 import { Container, Row, Col } from 'reactstrap';
 import './index.css';
 
@@ -25,7 +25,7 @@ class ComicItem extends Component {
             <Row>
               <Col md="12">
                 <Synopsis comicSynopsis = 'Lorem ipsum dolor sit amet.'/>
-                
+                <SeeMore comicUrl='google.com'/>
               </Col>
             </Row>
           </Col>
