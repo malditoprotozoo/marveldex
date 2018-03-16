@@ -6,7 +6,7 @@ import './index.css';
 
 const characters_arr = ['Iron Man', 'Captain America', 'Spider-Man', 'Thor', 'Deadpool', 'Black Widow', 'Hawkeye',
 'Black Panther', 'Loki', 'Hulk', 'Doctor Strange', 'Wasp', 'Hank Pym', 'Scarlet Witch', 'QuickSilver', 'Jessica Jones',
-'Gamora', 'Daredevil', 'Elektra', 'Rogue', 'Storm', 'Wolverine', 'X-23'];
+'Gamora', 'Daredevil', 'Elektra', 'Rogue', 'Storm', 'Wolverine', 'X-23', 'Winter Soldier', 'Groot'];
 const char_url = 'https://gateway.marvel.com:443/v1/public/characters';
 const api_key = 'f2df40d469e17113a48b2711ea0ea74f';
 
