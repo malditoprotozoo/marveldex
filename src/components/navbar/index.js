@@ -2,7 +2,7 @@
 import React from 'react';
 import logo from './../../../src/marveldex-logo.png';
 import PropTypes from 'prop-types';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Home from './../Home';
 import Login from './../login';
 
@@ -33,12 +33,12 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="warning" light expand="md">
-          <NavbarBrand href="/"><img src={logo} alt={"logo"} weign="40" height="40"/></NavbarBrand>
+          <Link to ="/"><img src={logo} alt={"logo"} weign="40" height="40"/></Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/login/">Login</NavLink>
+                <Link to="/login/" className="nav-link">Login</Link>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/Helvette/marveldex">Github</NavLink>

@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 const Image =( { characterImage, characterName } ) => (
   <div className="image-container">
-    <a href={`/character/${characterName.replace(' ', '-')}/`}><img src={characterImage} alt={characterName} /></a>
+    <Link to={`/character/${characterName.replace(' ', '-')}/`}><img src={characterImage} alt={characterName} /></Link>
   </div>
   )
 
