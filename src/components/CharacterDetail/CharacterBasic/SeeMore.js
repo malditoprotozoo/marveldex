@@ -5,7 +5,7 @@ import FaPlus from 'react-icons/lib/fa/plus';
 
 const SeeMore =( { charUrl } ) => (
   <span>
-    <a src={charUrl} target='_blank'> See More <FaPlus /> </a>
+    <a src={charUrl} target='_blank' className='see-more-btn'><FaPlus /> </a>
   </span>
   )
 

@@ -14,21 +14,21 @@ class ComicItem extends Component {
     return (
       <Container className='comic-item-container'>
         <Row className='comic-item'>
-          <Col md="9">
+          <Col lg="9">
             <Row>
-              <Col md="12">
+              <Col lg="12">
                 <Title comicTitle = 'título de prueba'/>
                 <PublishOn comicDate = '00/00/00'/>
                 <Pages comicPages = '160'/>
               </Col>
             </Row>
             <Row>
-              <Col md="12" className='synopsis'>
+              <Col lg="12" className='synopsis'>
                 <Synopsis comicSynopsis = 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, totam... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos provident optio, nam.'/>
               </Col>
             </Row>
           </Col>
-          <Col md="3" className='image-container'>
+          <Col lg="3" className='cover-container'>
             <Cover comicTitle = 'título de prueba' comicImage = 'https://memestatic.fjcdn.com/pictures/Josuke_86806d_6279840.jpg' />
           </Col>
           <div className='s-m-btn-container'>

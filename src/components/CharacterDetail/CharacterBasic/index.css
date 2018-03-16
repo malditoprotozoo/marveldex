@@ -1,3 +1,75 @@
 .image-container img {
   width: 100%;
 }
+
+.text-align {
+  text-align: center;
+}
+
+.image-container {
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  border: 2px solid black;
+}
+
+.char-name {
+  display: inline-block;
+  float: right;
+  position: relative;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+.char-name span {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1;
+}
+
+.paralel {
+  width: 115%;
+  height: 6px;
+  display: inline-block;
+  background-color: black;
+  transform: skew(-20deg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.char-description {
+  padding: 10px 50px;
+  display: inline-block;
+}
+
+.char-info.section.row .s-m-btn-container .see-more-btn {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  border-radius: 50%;
+  background-color: #FFC107;
+  border: 2px solid #FFC107;
+  color: white;
+  transition: all .5s;
+}
+
+
+.char-info.section.row .s-m-btn-container .see-more-btn:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  transition: all .5s;
+  color: black;
+}
+
+.s-m-btn-container {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}

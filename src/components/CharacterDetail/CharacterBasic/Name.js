@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 
 
 const Name =( { charName } ) => (
-  <h4 className='char-name'>
-    {charName}
-  </h4>
+  <div className='char-name'>
+    <span>{charName}</span>
+    <div className='paralel'></div>
+  </div>
   )
 
 

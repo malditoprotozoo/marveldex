@@ -14,20 +14,23 @@ class CharacterBasic extends Component {
     return (
       <Container>
         <Row>
-          <Col md='3' className='image-container'>
+          <Col lg='3' className='text-align'>
+            <div className='image-container'>
             <Image charImage='https://memestatic.fjcdn.com/pictures/Josuke+and+others+i+guess+fan+art+comp_5bc793_6279840.jpg' charName='nombre'/>
+            </div>
           </Col>
-          <Col md='9'>
+          <Col lg='9'>
             <Row>
-              <Col md='12'>
+              <Col lg='12' className='name-title'>
                 <Name charName='nombre'/>
+                
               </Col>
-              <Col md='12'>
-                <Description charDescription='Lorem ipsum dolor sit amet.'/>
+              <Col lg='12'>
+                <Description charDescription='Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro obcaecati veniam commodi tempora quasi, doloremque suscipit eos ipsum, praesentium placeat est accusamus.'/>
               </Col>
-              <Col md='12'>
-                <SeeMore charUrl='google.com'/>
-              </Col>
+              <div className='s-m-btn-container'>
+                <SeeMore comicUrl='google.com'/>
+              </div>
             </Row>
           </Col>
         </Row>

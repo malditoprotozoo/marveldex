@@ -11,12 +11,12 @@ class CharacterDetail extends Component {
     return (
       <Container>
         <Row className='char-info section'>
-          <Col xs='12'>
+          <Col xs='12' md={{size:8, offset:2}}>
             <CharacterBasic />
           </Col>
         </Row>
         <Row className='comic-item-list section'>
-          <Col xs='12' md={{size:10, offset:1}}>
+          <Col xs='12' md={{size:6, offset:3}}>
             <ComicItemList />
           </Col>
         </Row>

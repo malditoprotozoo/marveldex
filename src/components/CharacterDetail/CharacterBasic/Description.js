@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 
 const Description =( { charDescription } ) => (
-  <span>
+  <span className='char-description'>
     {charDescription}
   </span>
   )

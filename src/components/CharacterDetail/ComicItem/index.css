@@ -9,11 +9,11 @@ div.container.comic-item-container {
   margin-bottom: 20px;
 }
 
-.image-container {
+.cover-container {
   padding-left: 30px;
 }
 
-.image-container img {
+.cover-container img {
   width: 100%;
 }
 
