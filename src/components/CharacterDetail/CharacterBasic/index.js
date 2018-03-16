@@ -15,7 +15,7 @@ class CharacterBasic extends Component {
       <Container>
         <Row>
           <Col lg='3' className='text-align'>
-            <div className='image-container'>
+            <div className='char-image'>
             <Image charImage='https://memestatic.fjcdn.com/pictures/Josuke+and+others+i+guess+fan+art+comp_5bc793_6279840.jpg' charName='nombre'/>
             </div>
           </Col>
