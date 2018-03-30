@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Character from './Character/index';
 import { Container, Row, Col } from 'reactstrap';
+import md5 from 'md5';
 import './index.css';
 
 const characters_arr = ['Iron Man', 'Captain America', 'Spider-Man', 'Thor', 'Deadpool', 'Black Widow', 'Hawkeye',
 'Black Panther', 'Loki', 'Hulk', 'Doctor Strange', 'Wasp', 'Hank Pym', 'Scarlet Witch', 'QuickSilver', 'Jessica Jones',
 'Gamora', 'Daredevil', 'Elektra', 'Rogue', 'Storm', 'Wolverine', 'X-23', 'Winter Soldier', 'Groot'];
 const char_url = 'https://gateway.marvel.com:443/v1/public/characters';
-// const api_key = 'f2df40d469e17113a48b2711ea0ea74f';
-// const api_key = 'f3c93215e344b3ad7b6e96ba9ad9faff&hash=b8c91f97165b04fe87a6e262179476d9';
-const api_key = 'df325806086a500e9738f837cba8a7e9&hash=a31a86d05863b60cdc43763bce37f6b5';
+const ts = Date.now();
+const api_key = 'f2df40d469e17113a48b2711ea0ea74f';
+const hash = md5(ts, '01b038d335e4cfefea55eeeb6d6e033c5077bf45', 'f2df40d469e17113a48b2711ea0ea74f');
 
 class CharacterContainer extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class CharacterContainer extends Component {
   componentWillMount() {
     let results = [];
     characters_arr.map(char => {
-      fetch(`${char_url}?name=${char}&apikey=${api_key}`)
+      fetch(`${char_url}?name=${char}&apikey=${api_key}&hash=${hash}`)
         .then(response => {
           return response.json();
         })
