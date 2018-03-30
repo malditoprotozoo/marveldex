@@ -1,8 +1,8 @@
 {
   "name": "marveldex",
-  "homepage": "https://helvette.github.io/marveldex",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://helvette.github.io/marveldex",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "firebase": "^4.11.0",
@@ -17,11 +17,11 @@
     "redux": "^3.7.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }
