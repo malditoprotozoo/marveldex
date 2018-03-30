@@ -2,7 +2,7 @@
   "name": "marveldex",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://helvette.github.io/marveldex",
+  "homepage": "https://malditoprotozoo.github.io/marveldex",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "firebase": "^4.11.0",
