@@ -11,8 +11,6 @@ const char_url = 'https://gateway.marvel.com:443/v1/public/characters';
 const ts = Date.now();
 const api_key = 'f2df40d469e17113a48b2711ea0ea74f';
 const hash = md5(ts, '01b038d335e4cfefea55eeeb6d6e033c5077bf45', 'f2df40d469e17113a48b2711ea0ea74f');
-// const api_key = 'f3c93215e344b3ad7b6e96ba9ad9faff&hash=b8c91f97165b04fe87a6e262179476d9';
-// const api_key = 'df325806086a500e9738f837cba8a7e9&hash=a31a86d05863b60cdc43763bce37f6b5';
 
 class CharacterDetail extends Component {
   constructor(props) {
